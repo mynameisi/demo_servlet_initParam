@@ -49,7 +49,7 @@ public class GetInitParamServlet extends HttpServlet {
 			String initParamName = initParams.nextElement();
 			//2.2 获得初始参数值
 			String initParamValue = getServletConfig().getInitParameter(initParamName);
-			logger.debug("参数名称:[ "+initParamName+" ]   参数值:[ "+initParamName+" ]");
+			logger.debug("参数名称:[ "+initParamName+" ]   参数值:[ "+initParamValue+" ]");
 			//2.3 把所有的初始参数放到一个HashMap里面
 			initParamsMap.put(initParamName, initParamValue);
 		}
